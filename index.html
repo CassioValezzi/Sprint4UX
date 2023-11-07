@@ -16,18 +16,21 @@
     <main class="container mt-4 p-4" id="main">
         <div class="row d-flex">
             <h1>Protótipo da Aplicação de Controle de Semáforos</h1>
+            <p class="mb-2">Essa aplicação tem como finalidade de manipular semáforos de uma determinada via para ser possível a alteração do fluxo de trânsito.</p>
+            <p class="mb-2">Tenha em mente que essa aplicação será utilizada por operadores treinados e não será disponibilizado para o público.</p>
+            <p class="mb-2">Imagens são para auxiliar a explicação dos textos.</p>
             <div class="col-12 mb-3">
                 <h2 class="mb-2">Tela inicial</h2>
-                <p class="mb-2"> Mapa interativo para seleção da via. Também é possivel selecionar a via pelo campo "Via Selecionada" ao digitar o nome dela.</p>
-                <p class="mb-2">Também são disponibilazados dados simples da via como tempo dos semáfaros e trânsito.</p>
+                <p class="mb-2"> Mapa interativo para seleção da via. Também é possível selecionar a via pelo campo "Via Selecionada" ao digitar o nome dela.</p>
+                <p class="mb-2">Também são disponibilizados dados simples da via como tempo dos semáforos e trânsito.</p>
                 <img class="img-fluid  border border-black border-1 rounded-1" src="./assets/img/svg/Frame 4.svg" alt="">
                 
             </div>
             <div class="col-12 mb-3">
                 <h2 class="mb-2">Após clicar no botão "Dados da Via"</h2>
-                <p class="mb-2"> O usuário será direciondado para a tela que demonstrará dados da via (ou das vias) selecionada tanto para carro como para pedestres (dependendo da seleção), por exemplo: Velocidade média X Tempo da via, Quantidade de carros X Tempo da Via, Trânsito (Quantidade de Carros X m²), Quatidade de pedestres que cruzaram a via X Tempo.</p>
+                <p class="mb-2">O usuário será direcionado para a tela que demonstrará dados da via (ou das vias) selecionada tanto para carro como para pedestres (dependendo da seleção), sendo eles: Velocidade média X Tempo da via, Quantidade de carros X Tempo da Via, Trânsito (Quantidade de Carros X m²), Quantidade de pedestres que cruzaram a via X Tempo.</p>
                 <p class="mb-2">
-                    O usuário podera mudar o tempo de temporizador dos semaforos de forma simultanea na via.
+                    O usuário poderá mudar o tempo de temporizador de todos os semáforos de forma simultânea na via.
                 </p>
 
                 <img class="img-fluid border border-black border-1 rounded-1" src="./assets/img/svg/Frame 5.svg" alt="">
@@ -36,7 +39,7 @@
             <div class="col-12 mb-3">
                 <h2 class="mb-2">Após clicar no botão "Controle Manual"</h2>
                 <p class="mb-2">
-                    O usuário será direciondado para a tela que demonstrará os semáforos da via selecinada na "Tela inicial" podendo selecionar quaisquer deles para "Abrir" ou " Fechar", e também mudar o tempo do temporizador de cada semáforo de forma indivudual, além de poder fechar-los para manutenção da via selecionada.
+                    O usuário será direcionado para a tela que demonstrará os semáforos da via selecionada na "Tela inicial" podendo selecionar quaisquer deles para "Abrir" ou "Fechar", e também mudar o tempo do temporizador de cada semáforo de forma individual, além de poder, fechá-los para manutenção da via selecionada, fazendo com que esses semáforos indiquem avarias na via e em quanto tempo a via será fechada para que automóveis possam entrar em vias alternativas.
                 </p>
                 <img class="img-fluid border border-black border-1 rounded-1" src="./assets/img/svg/Frame 6.svg" alt="">
             </div>
@@ -60,6 +63,23 @@
                         aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Não compartilharemos seu e-mail com ninguém.</div>
                 </div>
+            </div>
+            <div class="mb-3">
+                <label for="escololaridade" class="form-label">Nível de Escolaridade <i class="bi bi-asterisk text-danger"></i></label>
+                <select class="form-select" id="escololaridade" name="escololaridade" aria-label="Default select example">
+                    <option selected>Abra o menu para selecionar</option>
+                    <option value="Ensino Fundamental incompleto">Ensino Fundamental incompleto</option>
+                    <option value="Ensino Fundamental completo">Ensino Fundamental completo</option>
+                    <option value="Ensino Médio incompleto">Ensino Médio incompleto</option>
+                    <option value="Ensino Médio completo">Ensino Médio completo</option>
+                    <option value="Ensino Superior incompleto">Ensino Superior incompleto</option>
+                    <option value="Ensino Superior completo">Ensino Superior completo</option>
+                    <option value="Pós-graduação incompleto">Pós-graduação incompleto</option>
+                    <option value="Pós-graduação completo">Pós-graduação completo</option>
+                    <option value="nivel superior a estes">Tenho nível superior a estes</option>
+
+                    
+                </select>
             </div>
             <div class="mb-3">
                 <label for="quest1" class="form-label">O quão clara e eficiente é a interface do operador? <i class="bi bi-asterisk text-danger"></i></label>
