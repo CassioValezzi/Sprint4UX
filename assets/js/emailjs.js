@@ -2,7 +2,15 @@ const named = document.getElementById("Name");
 const email = document.getElementById("exampleInputEmail1");
 const exemplo = document.getElementById("exemplo")
 const message = document.getElementById("exampleFormControlTextarea1");
+const quest1 = document.getElementById("quest1");
+const quest2 = document.getElementById("quest2");
+const quest3 = document.getElementById("quest3");
+const quest4 = document.getElementById("quest4");
+
+
 const submit = document.getElementById("submit");
+
+
 
 
 (function () {
@@ -27,11 +35,12 @@ function Emailjs(){
 
 
 submit.addEventListener('click',()=>{
-    if (named.value == '' || email.value == '' || message.value == ''){
-        alert("Campos vazios")
+    if (named.value == '' || quest1.value == '' || quest2.value == '' || quest3.value == '' || quest4.value == '' || message.value == ''){
+        alert("Campos obrigatórios vazios\nPreencha os compos para mandar a mensagem")
     }
     else{
-        alert("Sucesso! Sua Mensagem foi enviada.")
         Emailjs()
+        alert("Sucesso! Sua Mensagem foi enviada.")
+        
     }
 })
