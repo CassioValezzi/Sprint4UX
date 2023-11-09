@@ -35,7 +35,7 @@ function Emailjs(){
 
 
 submit.addEventListener('click',()=>{
-    if (named.value == '' || quest1.value == '' || quest2.value == '' || quest3.value == '' || quest4.value == '' || message.value == ''){
+    if ( quest1.value == '' || quest2.value == '' || quest3.value == '' || quest4.value == '' || message.value == ''){
         alert("Campos obrigatórios vazios\nPreencha os compos para mandar a mensagem")
     }
     else{

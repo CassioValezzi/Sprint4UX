@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,30 +16,44 @@
     <main class="container mt-4 p-4" id="main">
         <div class="row d-flex">
             <h1>Protótipo DontStop</h1>
-            <p class="mb-2">Essa aplicação tem como finalidade de manipular semáforos de uma determinada via para alterar do fluxo de trânsito.</p>
-            <p class="mb-2">Tenha em mente que essa aplicação será utilizada por operadores treinados e não será disponibilizado para o público.</p>
-            <p class="mb-2">Imagens são para auxiliar a explicação dos textos.</p>
+            <p class="mb-2">Essa aplicação tem a finalidade de manipular os semáforos em uma determinada via, de
+                modo a alterar o fluxo e intensidade do trânsito. Tenha em mente que este sistema será
+                utilizado por operadores treinados e não será disponibilizado para o público.
+            </p>
+            <p class="mb-2">Imagens estão presentes para auxiliar na compreensão dos exemplos.</p>
             <div class="col-12 mb-3">
                 <h2 class="mb-2">Tela inicial</h2>
-                <p class="mb-2"> Mapa interativo para seleção da via. Também é possível selecionar a via pelo campo "Via Selecionada" ao digitar o nome dela.</p>
-                <p class="mb-2">Também são disponibilizados dados simples da via como tempo dos semáforos e trânsito.</p>
-                <img class="img-fluid  border border-black border-1 rounded-1" src="./assets/img/svg/Frame 4.svg" alt="">
-                
+                <p class="mb-2"> Mapa interativo para seleção da via. Também é possível utilizar o campo “Via
+                    Selecionada”
+                    para buscar um local através do nome. Também são disponibilizados dados simples da via,
+                    como tempo dos semáforos e fluxo do tráfego.
+                </p>
+
+                <img class="img-fluid  border border-black border-1 rounded-1" src="./assets/img/svg/Frame 4.svg"
+                    alt="">
+
             </div>
             <div class="col-12 mb-3">
                 <h2 class="mb-2">Após clicar no botão "Dados da Via"</h2>
-                <p class="mb-2">O usuário será direcionado para a tela que demonstrará dados da via (ou das vias) selecionada tanto para carro como para pedestres (dependendo da seleção), sendo eles: Velocidade média X Tempo da via, Quantidade de carros X Tempo da Via, Trânsito (Quantidade de Carros X m²), Quantidade de pedestres que cruzaram a via X Tempo.</p>
+                <p class="mb-2">O usuário será direcionado para a tela que demonstrará dados da via (ou das vias)
+                    selecionada tanto para carro como para pedestres (dependendo da seleção), sendo eles: Velocidade
+                    média X Tempo da via, Quantidade de carros X Tempo da Via, Trânsito (Quantidade de Carros X m²),
+                    Quantidade de pedestres que cruzaram a via X Tempo.</p>
                 <p class="mb-2">
                     O usuário poderá mudar o tempo de temporizador de todos os semáforos de forma simultânea na via.
                 </p>
 
                 <img class="img-fluid border border-black border-1 rounded-1" src="./assets/img/svg/Frame 5.svg" alt="">
             </div>
-            
+
             <div class="col-12 mb-3">
                 <h2 class="mb-2">Após clicar no botão "Controle Manual"</h2>
                 <p class="mb-2">
-                    O usuário será direcionado para a tela que demonstrará os semáforos da via selecionada na "Tela inicial" podendo selecionar quaisquer deles para "Abrir" ou "Fechar", e também mudar o tempo do temporizador de cada semáforo de forma individual, além de poder, fechá-los para manutenção da via selecionada, fazendo com que esses semáforos indiquem avarias na via e em quanto tempo a via será fechada para que automóveis possam entrar em vias alternativas.
+                    O usuário será direcionado para a tela que demonstrará os semáforos da via selecionada na "Tela
+                    inicial" podendo selecionar quaisquer deles para "Abrir" ou "Fechar", e também mudar o tempo do
+                    temporizador de cada semáforo de forma individual, além de poder, fechá-los para manutenção da via
+                    selecionada, fazendo com que esses semáforos indiquem avarias na via e em quanto tempo a via será
+                    fechada para que automóveis possam entrar em vias alternativas.
                 </p>
                 <img class="img-fluid border border-black border-1 rounded-1" src="./assets/img/svg/Frame 6.svg" alt="">
             </div>
@@ -48,12 +62,12 @@
     </main>
 
 
-    <section class="container" >
+    <section class="container">
         <form class="p-3" id="contact-form">
             <h3>Diga sua opinião (seções obrigatórias: <i class="bi bi-asterisk text-danger"></i> )</h3>
             <div class="row mb-3">
                 <div class="col-12 col-md-6">
-                    <label for="Name" class="form-label">Nome Completo <i class="bi bi-asterisk text-danger"></i></label>
+                    <label for="Name" class="form-label">Nome Completo </label>
                     <input type="text" class="form-control" id="Name" name="Name" aria-label="Firstname">
                     <div id="Namehelp" class="form-text">Não compartilharemos seu nome com ninguém.</div>
                 </div>
@@ -65,8 +79,10 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="escololaridade" class="form-label">Nível de Escolaridade <i class="bi bi-asterisk text-danger"></i></label>
-                <select class="form-select" id="escololaridade" name="escololaridade" aria-label="Default select example">
+                <label for="escololaridade" class="form-label">Nível de Escolaridade <i
+                        class="bi bi-asterisk text-danger"></i></label>
+                <select class="form-select" id="escololaridade" name="escololaridade"
+                    aria-label="Default select example">
                     <option selected>Abra o menu para selecionar</option>
                     <option value="Ensino Fundamental incompleto">Ensino Fundamental incompleto</option>
                     <option value="Ensino Fundamental completo">Ensino Fundamental completo</option>
@@ -78,33 +94,34 @@
                     <option value="Pós-graduação completo">Pós-graduação completo</option>
                     <option value="nivel superior a estes">Tenho nível superior a estes</option>
 
-                    
+
                 </select>
             </div>
             <div class="mb-3">
-                <label for="quest1" class="form-label">O quão clara e eficiente é a interface do operador? <i class="bi bi-asterisk text-danger"></i></label>
-                <input type="text" class="form-control" id="quest1" name="quest1"
-                    aria-describedby="textarea">
+                <label for="quest1" class="form-label">O quão clara e eficiente é a interface do operador? <i
+                        class="bi bi-asterisk text-danger"></i></label>
+                <input type="text" class="form-control" id="quest1" name="quest1" aria-describedby="textarea">
             </div>
             <div class="mb-3">
-                <label for="quest2" class="form-label">Que funções ainda devem ser adicionadas? <i class="bi bi-asterisk text-danger"></i>
-                    </label>
-                <input type="text" class="form-control" id="quest2" name="quest2"
-                    aria-describedby="textarea">
+                <label for="quest2" class="form-label">Que funções ainda devem ser adicionadas? <i
+                        class="bi bi-asterisk text-danger"></i>
+                </label>
+                <input type="text" class="form-control" id="quest2" name="quest2" aria-describedby="textarea">
             </div>
             <div class="mb-3">
-                <label for="quest3" class="form-label">Que funções são desnecessárias e podem ser removidas? <i class="bi bi-asterisk text-danger"></i></label>
-                <input type="text" class="form-control" id="quest3" name="quest3"
-                    aria-describedby="textarea">
+                <label for="quest3" class="form-label">Que funções são desnecessárias e podem ser removidas? <i
+                        class="bi bi-asterisk text-danger"></i></label>
+                <input type="text" class="form-control" id="quest3" name="quest3" aria-describedby="textarea">
             </div>
             <div class="mb-3">
-                <label for="quest4" class="form-label">O que podemos alterar para que seja mais simples treinar alguém para utlizar a aplição? <i class="bi bi-asterisk text-danger"></i></label>
-                <input type="text" class="form-control" id="quest4" name="quest4"
-                    aria-describedby="textarea">
+                <label for="quest4" class="form-label">O que podemos alterar para que seja mais simples treinar alguém
+                    para utilizar a aplicação? <i class="bi bi-asterisk text-danger"></i></label>
+                <input type="text" class="form-control" id="quest4" name="quest4" aria-describedby="textarea">
             </div>
-            
+
             <div class="mb-3">
-                <label for="exemplo" class="form-label">De 0 á 5 o quão a ideia de sistema de trânsito inteligente te agrada <i class="bi bi-asterisk text-danger"></i></label>
+                <label for="exemplo" class="form-label">De 0 a 5 o quão a ideia de sistema de trânsito inteligente te
+                    agrada <i class="bi bi-asterisk text-danger"></i></label>
                 <select class="form-select" id="exemplo" name="exemplo" aria-label="Default select example">
                     <option selected>Abra o menu para selecionar</option>
                     <option value="1">1</option>
@@ -115,7 +132,8 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Diga suas Críticas e/ou Sugestões <i class="bi bi-asterisk text-danger"></i></label>
+                <label for="exampleFormControlTextarea1" class="form-label">Diga suas Críticas e/ou Sugestões <i
+                        class="bi bi-asterisk text-danger"></i></label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="10"></textarea>
             </div>
             <button type="submit" id="submit" class="btn btn-primary">Enviar</button>
